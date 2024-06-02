@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Every Snack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-title">
+    <h1>Every Snack<span class="dot">.</span>com</h1>
+    <p class="tagline">Eat the taste you deserve</p>
+    <button onclick="document.location = 'Menu.html'">Let's Start</button>
+  </div>
+
+  <div class="falling-snacks">
+    <!-- JavaScript will generate these divs dynamically -->
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const snackContainer = document.querySelector('.falling-snacks');
+      const snackImages = ['images/burger.jpeg', 'images/pizza.jpeg', 'images/popcorn.jpeg', 'images/chips.jpeg']; // Adjust paths as needed
+
+      for (let i = 0; i < 20; i++) { // Number of falling snacks
+        const snack = document.createElement('div');
+        snack.classList.add('snack');
+        snack.style.setProperty('--random-x', Math.random());
+        snack.style.backgroundImage = `url('${snackImages[i % snackImages.length]}')`;
+        snackContainer.appendChild(snack);
+      }
+    });
+  </script>
+</body>
+</html>

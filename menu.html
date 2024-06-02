@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Snacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 400px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .filters button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #eee;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .filters button:hover {
+            background-color: #ddd;
+        }
+        .inspiration, .top-brands {
+            text-align: center;
+            padding: 20px;
+        }
+        .inspiration img, .top-brands img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .inspiration img:hover, .top-brands img:hover {
+            transform: scale(1.1);
+        }
+        .inspiration div, .top-brands div {
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+        }
+        .inspiration p, .top-brands p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Every Snacks</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+    </div>
+    <div class="filters">
+        <button>Filters</button>
+        <button>Rating: 4.0+</button>
+        <button>Pure Veg</button>
+        <button>Cuisines</button>
+    </div>
+    <div class="inspiration">
+        <h2>Inspiration for your first order</h2>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Pizza">
+            <p>Pizza</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Biryani">
+            <p>Biryani</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Burger">
+            <p>Burger</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Chicken">
+            <p>Chicken</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Cake">
+            <p>Cake</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Sandwich">
+            <p>Sandwich</p>
+        </div>
+    </div>
+    <div class="top-brands">
+        <h2>Top brands for you</h2>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Brand 1">
+            <p>Brand 1</p>
+        </div>
+        <div>
+            <img src="pizza.jpg" alt="">
+            <p>Dominos</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Brand 3">
+            <p>Brand 3</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Brand 4">
+            <p>Brand 4</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Brand 5">
+            <p>Brand 5</p>
+        </div>
+    </div>
+</body>
+</html>
